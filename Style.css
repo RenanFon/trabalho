@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    
+    text-align: center;
+    }
+    body {
+        background: #3a6186;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        
+    /*background: linear-gradient(180deg, rgb(23, 18, 36) 0%, rgb(5, 4, 7) 100%);*/
+    }
+
+    .titulo{margin-top: 50px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: double;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+
+    }
+    .calculator {
+    width: 30%;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(116, 26, 151, 0.164) 0%, rgba(63, 19, 78, 0) 50%, rgba(31, 5, 43, 0) 100%);
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 5 5px black;
+    border: 4px 2px solid rgb(255, 255, 255);
+    
+    }
+    #display {
+    margin: 5px;
+    width: 119%;
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+    background: linear-gradient(180deg, rgb(37, 29, 58) 0%, rgba(14,11,22,1) 100%);
+    font-size: 50px;
+    left: 2px;
+    top: 2px;
+    color: #ffffff;
+    border-radius: 5px;
+
+    
+    }
+    .btnTop:hover{
+        background-color: #89253e;
+        font-size: 2.0rem;
+        transition: 0.1s;
+        border-color: rgba(2, 2, 2, 0.418);
+    }
+    .btnTop {
+    margin: 5px;
+    background-color: rgba(202, 202, 202, 0.171);
+    padding: 30px 30px 30px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    width: 130px;
+    height: 100px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(5, 4, 4, 0.363);
+    
+    }
+    .btnDel:hover{
+        background-color: #89253e;
+        font-size: 2.0rem;
+        transition: 0.1s;
+        border-color: rgba(2, 2, 2, 0.418);
+    }
+    .btnDel {
+    
+    margin: 5px;
+    background-color: rgba(202, 202, 202, 0.171);
+    padding: 30px 30px 30px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(5, 4, 4, 0.363);
+    
+    }
+    .btnNum:hover{
+        background-color: #89253e;
+        font-size: 2.0rem;
+        transition: 0.1s;
+        border-color: rgba(2, 2, 2, 0.418);
+    }
+    .btnNum {
+        margin: 5px;
+    background-color: rgba(202, 202, 202, 0.171);
+    border-color: rgba(5, 4, 4, 0.363);
+    border-width: 1px;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    font-size: 28px;
+    width: 130px;
+    height: 100px;
+    border-radius: 5px;
+    }
+    .btnMath:hover{
+        background-color: #89253e;
+        font-size: 2.0rem;
+        transition: 0.1s;
+        border-color: rgba(2, 2, 2, 0.418);
+    }
+    .btnMath {
+    margin: 5px;
+    border-color: #ffffff;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    background-color: rgba(202, 202, 202, 0.171);
+    border-color: rgba(5, 4, 4, 0.363);
+    border-width: 1px;
+    font-size: 28px;
+    width: 130px;
+    height: 100px;
+    border-radius: 5px;
+    }
+    .btnOpps:hover{
+    background-color: #89253e;
+    font-size: 2.0rem;
+    border-color: rgba(2, 2, 2, 0.418);
+    transition: 0.1s;
+    }
+    .btnOpps {
+        margin: 5px;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    background-color: rgba(2202, 202, 202, 0.171);
+    border-color: rgba(5, 4, 4, 0.363);
+    border-width: 1px;
+    font-size: 28px;
+    width: 130px;
+    height: 100px;
+    border-radius: 5Px;
+    }

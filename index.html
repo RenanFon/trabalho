@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Calculadora Cientifica</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+</head>
+<body>
+    <h1 class="titulo">
+        calculadora Cientifica
+    </h1>
+<form name="sci-calc">
+<table class="calculator" cellspacing="0" cellpadding="1">
+<tr>
+<td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value= 0 "></td>
+<td><input type="button" class="btnTop" name="btnTop" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="π" onclick="addChar(this.form.display,'3.14159265359')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)"></td>
+<td colspan="2"><input type="button" class="btnDel" name="btnDel" value="DEL" onclick="deleteChar(this.form.display)"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="x^y" onclick="addChar(this.form.display, '^')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="mod" onclick="addChar(this.form.display, 'mod')"></td>
+<tr>
+<td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="ln" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="e" onclick="addChar(this.form.display, '2,7182818284590452353602874713527')"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="√" onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="exp" onclick="mudaExp(this.form.display)"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnMath" name="btnMath" value="&#177" onclick="changeSign(this.form.display)"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="." onclick="addChar(this.form.display, '.')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="x2" onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="1/x" onclick="if(checkNum(this.form.display.value)) { umBarraX(this.form) }"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display,')')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="log" onclick="if(checkNum(this.form.display.value)) { log(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="n!" onclick="if(checkNum(this.form.display.value)) { fatorial(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="|x|" onclick="if(checkNum(this.form.display.value)) { modX(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="10^x" onclick="if(checkNum(this.form.display.value)) { dezElevado(this.form) }"></td>
+</tr>
+</tabel>
+</form>
+</body>
+<script src="funcao.js"></script>
+</html>
